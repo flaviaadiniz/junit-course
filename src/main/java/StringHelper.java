@@ -5,8 +5,8 @@ public class StringHelper {
         if (str.length() <= 2)
             return str.replaceAll("A", "");
 
-        String first2Chars = str.substring(0, 2);
-        String stringMinusFirst2Chars = str.substring(2);
+        String first2Chars = str.substring(0, 2); // gets the first 2 characters
+        String stringMinusFirst2Chars = str.substring(2); // creates a new string starting from the index passed as a parameter
 
         return first2Chars.replaceAll("A", "")
                 + stringMinusFirst2Chars;
