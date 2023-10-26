@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3e7fdbd-3e94-4efe-a46c-635849821ad3" name="Changes" comment="Add StringHelper main class and StringHelperTest">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StringHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StringHelperTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="e3e7fdbd-3e94-4efe-a46c-635849821ad3" name="Changes" comment="Add 2 first tests to StringHelperTest" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698193472069</updated>
       <workItem from="1698193486177" duration="2924000" />
-      <workItem from="1698362645301" duration="815000" />
+      <workItem from="1698362645301" duration="1146000" />
     </task>
     <task id="LOCAL-00001" summary="Add JUnit dependency to pom">
       <created>1698194409854</created>
@@ -96,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698194472262</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add 2 first tests to StringHelperTest">
+      <created>1698363801572</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698363801572</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,21 +119,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add JUnit dependency to pom" />
     <MESSAGE value="Add StringHelper main class and StringHelperTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add StringHelper main class and StringHelperTest" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/StringHelperTest.java</url>
-          <line>15</line>
-          <properties class="StringHelperTest" method="truncateAInFirst2PositionsTest2">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Add 2 first tests to StringHelperTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add 2 first tests to StringHelperTest" />
   </component>
 </project>
