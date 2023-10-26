@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3e7fdbd-3e94-4efe-a46c-635849821ad3" name="Changes" comment="Add 2 first tests to StringHelperTest" />
+    <list default="true" id="e3e7fdbd-3e94-4efe-a46c-635849821ad3" name="Changes" comment="Minor code refactoring on StringHelper">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StringHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StringHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StringHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StringHelperTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,12 +44,22 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.StringHelperTest">
+  <component name="RunManager" selected="JUnit.StringHelperTest.areFirstAndLastTwoCharactersTheSameTest_BasicNegativeScenario">
     <configuration name="StringHelperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit-course" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StringHelperTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringHelperTest.areFirstAndLastTwoCharactersTheSameTest_BasicNegativeScenario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit-course" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StringHelperTest" />
+      <option name="METHOD_NAME" value="areFirstAndLastTwoCharactersTheSameTest_BasicNegativeScenario" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -62,6 +76,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StringHelperTest.areFirstAndLastTwoCharactersTheSameTest_BasicNegativeScenario" />
         <item itemvalue="JUnit.StringHelperTest" />
         <item itemvalue="JUnit.StringHelperTest.truncateAInFirst2PositionsTest_AInFirstPosition" />
       </list>
@@ -76,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698193472069</updated>
       <workItem from="1698193486177" duration="2924000" />
-      <workItem from="1698362645301" duration="1146000" />
+      <workItem from="1698362645301" duration="1984000" />
     </task>
     <task id="LOCAL-00001" summary="Add JUnit dependency to pom">
       <created>1698194409854</created>
@@ -99,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698363801572</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Minor code refactoring on StringHelper">
+      <created>1698364064812</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698364064812</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +142,7 @@
     <MESSAGE value="Add JUnit dependency to pom" />
     <MESSAGE value="Add StringHelper main class and StringHelperTest" />
     <MESSAGE value="Add 2 first tests to StringHelperTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add 2 first tests to StringHelperTest" />
+    <MESSAGE value="Minor code refactoring on StringHelper" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor code refactoring on StringHelper" />
   </component>
 </project>
