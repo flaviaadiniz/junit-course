@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3e7fdbd-3e94-4efe-a46c-635849821ad3" name="Changes" comment="Minor code refactoring on StringHelper">
+    <list default="true" id="e3e7fdbd-3e94-4efe-a46c-635849821ad3" name="Changes" comment="Add examples of @BeforeClass and @AfterClass">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ComparingArrayTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StringHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StringHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StringHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StringHelperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +44,35 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.StringHelperTest">
+  <component name="RunManager" selected="JUnit.ComparingArrayTest.arraySortTest_NullArray">
+    <configuration name="ComparingArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit-course" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ComparingArrayTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComparingArrayTest.arraySortTest_NullArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit-course" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ComparingArrayTest" />
+      <option name="METHOD_NAME" value="arraySortTest_NullArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuickBeforeAfterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit-course" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="QuickBeforeAfterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StringHelperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit-course" />
       <option name="PACKAGE_NAME" value="" />
@@ -64,21 +92,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringHelperTest.truncateAInFirst2PositionsTest_AInFirstPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit-course" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StringHelperTest" />
-      <option name="METHOD_NAME" value="truncateAInFirst2PositionsTest_AInFirstPosition" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ComparingArrayTest.arraySortTest_NullArray" />
+        <item itemvalue="JUnit.ComparingArrayTest" />
+        <item itemvalue="JUnit.QuickBeforeAfterTest" />
         <item itemvalue="JUnit.StringHelperTest" />
         <item itemvalue="JUnit.StringHelperTest.areFirstAndLastTwoCharactersTheSameTest_BasicNegativeScenario" />
-        <item itemvalue="JUnit.StringHelperTest.truncateAInFirst2PositionsTest_AInFirstPosition" />
       </list>
     </recent_temporary>
   </component>
@@ -91,7 +111,8 @@
       <option name="presentableId" value="Default" />
       <updated>1698193472069</updated>
       <workItem from="1698193486177" duration="2924000" />
-      <workItem from="1698362645301" duration="1984000" />
+      <workItem from="1698362645301" duration="2772000" />
+      <workItem from="1698419386919" duration="3593000" />
     </task>
     <task id="LOCAL-00001" summary="Add JUnit dependency to pom">
       <created>1698194409854</created>
@@ -121,7 +142,35 @@
       <option name="project" value="LOCAL" />
       <updated>1698364064812</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add first test using assertFalse to StringHelperTest">
+      <created>1698364748621</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698364748621</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add first test using assertTrue to StringHelperTest">
+      <created>1698364862798</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698364862798</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add QuickBeforeAfterTest for simple examples of @Before and @After">
+      <created>1698421162106</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698421162107</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add examples of @BeforeClass and @AfterClass">
+      <created>1698425805046</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698425805046</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +192,10 @@
     <MESSAGE value="Add StringHelper main class and StringHelperTest" />
     <MESSAGE value="Add 2 first tests to StringHelperTest" />
     <MESSAGE value="Minor code refactoring on StringHelper" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor code refactoring on StringHelper" />
+    <MESSAGE value="Add first test using assertFalse to StringHelperTest" />
+    <MESSAGE value="Add first test using assertTrue to StringHelperTest" />
+    <MESSAGE value="Add QuickBeforeAfterTest for simple examples of @Before and @After" />
+    <MESSAGE value="Add examples of @BeforeClass and @AfterClass" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add examples of @BeforeClass and @AfterClass" />
   </component>
 </project>
