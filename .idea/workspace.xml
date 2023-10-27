@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3e7fdbd-3e94-4efe-a46c-635849821ad3" name="Changes" comment="Add examples of @BeforeClass and @AfterClass">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ComparingArrayTest.java" afterDir="false" />
+    <list default="true" id="e3e7fdbd-3e94-4efe-a46c-635849821ad3" name="Changes" comment="Add parameterized test class">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AllTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StringHelperParameterizedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StringHelperParameterizedTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StringHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StringHelperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,22 +35,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.ComparingArrayTest.arraySortTest_NullArray">
-    <configuration name="ComparingArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AllTests">
+    <configuration name="AllTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ComparingArrayTest" />
+      <option name="MAIN_CLASS_NAME" value="AllTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -64,29 +81,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickBeforeAfterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ComparingArrayTest.arraySort_Performance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit-course" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="QuickBeforeAfterTest" />
+      <option name="MAIN_CLASS_NAME" value="ComparingArrayTest" />
+      <option name="METHOD_NAME" value="arraySort_Performance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringHelperParameterizedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit-course" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StringHelperParameterizedTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringHelperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StringHelperParameterizedTest.truncateAInFirst2PositionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit-course" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StringHelperTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringHelperTest.areFirstAndLastTwoCharactersTheSameTest_BasicNegativeScenario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit-course" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StringHelperTest" />
-      <option name="METHOD_NAME" value="areFirstAndLastTwoCharactersTheSameTest_BasicNegativeScenario" />
+      <option name="MAIN_CLASS_NAME" value="StringHelperParameterizedTest" />
+      <option name="METHOD_NAME" value="truncateAInFirst2PositionsTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -94,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AllTests" />
+        <item itemvalue="JUnit.StringHelperParameterizedTest.truncateAInFirst2PositionsTest" />
+        <item itemvalue="JUnit.StringHelperParameterizedTest" />
+        <item itemvalue="JUnit.ComparingArrayTest.arraySort_Performance" />
         <item itemvalue="JUnit.ComparingArrayTest.arraySortTest_NullArray" />
-        <item itemvalue="JUnit.ComparingArrayTest" />
-        <item itemvalue="JUnit.QuickBeforeAfterTest" />
-        <item itemvalue="JUnit.StringHelperTest" />
-        <item itemvalue="JUnit.StringHelperTest.areFirstAndLastTwoCharactersTheSameTest_BasicNegativeScenario" />
       </list>
     </recent_temporary>
   </component>
@@ -112,7 +130,7 @@
       <updated>1698193472069</updated>
       <workItem from="1698193486177" duration="2924000" />
       <workItem from="1698362645301" duration="2772000" />
-      <workItem from="1698419386919" duration="3593000" />
+      <workItem from="1698419386919" duration="7576000" />
     </task>
     <task id="LOCAL-00001" summary="Add JUnit dependency to pom">
       <created>1698194409854</created>
@@ -170,7 +188,35 @@
       <option name="project" value="LOCAL" />
       <updated>1698425805046</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add ComparingArrayTest to test arrays assertions and expected exceptions">
+      <created>1698426745929</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698426745929</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Change helper initialization to a @Before test">
+      <created>1698428177054</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1698428177054</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add perfomance test to ComparingArrayTest">
+      <created>1698434725302</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1698434725302</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add parameterized test class">
+      <created>1698434756430</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1698434756430</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +242,10 @@
     <MESSAGE value="Add first test using assertTrue to StringHelperTest" />
     <MESSAGE value="Add QuickBeforeAfterTest for simple examples of @Before and @After" />
     <MESSAGE value="Add examples of @BeforeClass and @AfterClass" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add examples of @BeforeClass and @AfterClass" />
+    <MESSAGE value="Add ComparingArrayTest to test arrays assertions and expected exceptions" />
+    <MESSAGE value="Change helper initialization to a @Before test" />
+    <MESSAGE value="Add perfomance test to ComparingArrayTest" />
+    <MESSAGE value="Add parameterized test class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add parameterized test class" />
   </component>
 </project>
