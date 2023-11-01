@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 public class ToDoBusinessImplTest {
 
     @Test
-    public void test() {
+    public void testRetrieveToDosRelatedToSpring_usingAStub() {
         ToDoService toDoServiceStub = new ToDoServiceStub();
         ToDoBusinessImpl toDoBusinessImpl = new ToDoBusinessImpl(toDoServiceStub);
         List<String> filteredToDos = toDoBusinessImpl.retrieveToDosRelatedToSpring("Dummy");
