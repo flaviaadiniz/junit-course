@@ -8,7 +8,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-public class ToDoBusinessImplTest {
+public class ToDoBusinessImplStubTest {
 
     @Test
     public void testRetrieveToDosRelatedToSpring_usingAStub() {
