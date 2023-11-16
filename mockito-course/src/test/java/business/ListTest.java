@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -36,6 +37,14 @@ public class ListTest {
 
         assertEquals("in28Minutes", listMock.get(0));
         assertEquals(null, listMock.get(10));
+    }
+
+
+    @Test(expected = RuntimeException.class)
+    public void shouldThrowAnException() {
+        List listMock = mock(List.class);
+        when(listMock.get(anyInt())).thenThrow(new RuntimeException("Something went wrong"));
+        listMock.get(0);
     }
 
 
