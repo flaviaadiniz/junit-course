@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
@@ -42,7 +43,7 @@ public class ListTest {
         when(listMock.get(0)).thenReturn("in28Minutes");
 
         assertEquals("in28Minutes", listMock.get(0));
-        assertEquals(null, listMock.get(10));
+        assertNull(listMock.get(10));
     }
 
 
