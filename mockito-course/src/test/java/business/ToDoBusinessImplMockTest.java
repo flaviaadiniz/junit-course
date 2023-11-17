@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.*;
 
 public class ToDoBusinessImplMockTest {
@@ -48,6 +49,25 @@ public class ToDoBusinessImplMockTest {
         List<String> filteredToDos = toDoBusinessImpl.retrieveToDosRelatedToSpring("Dummy");
 
         assertEquals(0, filteredToDos.size());
+    }
+
+
+    @Test
+    public void testRetrieveToDosRelatedToSpring_usingBDD() {
+        //given
+        ToDoService toDoServiceMock = mock(ToDoService.class);
+
+        List<String> toDos = Arrays.asList("Learn Spring MVC", "Learn Spring", "Learn to Dance");
+
+        given(toDoServiceMock.retrieveToDos("Dummy")).willReturn(toDos);
+
+        ToDoBusinessImpl toDoBusinessImpl = new ToDoBusinessImpl(toDoServiceMock);
+
+        //when
+        List<String> filteredToDos = toDoBusinessImpl.retrieveToDosRelatedToSpring("Dummy");
+
+        //then
+        assertEquals(2, filteredToDos.size());
     }
 
 

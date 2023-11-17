@@ -13,8 +13,13 @@ public class ListTest {
 
     @Test
     public void shouldReturnListSize() {
+        //given - set up the scenario
         List listMock = mock(List.class);
         when(listMock.size()).thenReturn(2);
+
+        //when - the actual method call
+
+        //then - check the asserts
         assertEquals(2, listMock.size());
     }
 
