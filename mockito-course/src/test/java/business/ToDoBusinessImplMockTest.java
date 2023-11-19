@@ -71,4 +71,24 @@ public class ToDoBusinessImplMockTest {
     }
 
 
+    @Test
+    public void testDeleteToDosNotRelatedToSpring_usingBDD() {
+        //given
+        ToDoService toDoServiceMock = mock(ToDoService.class);
+
+        List<String> toDos = Arrays.asList("Learn Spring MVC", "Learn Spring", "Learn to Dance");
+
+        given(toDoServiceMock.retrieveToDos("Dummy")).willReturn(toDos);
+
+        ToDoBusinessImpl toDoBusinessImpl = new ToDoBusinessImpl(toDoServiceMock);
+
+        //when
+        toDoBusinessImpl.deleteToDosNotRelatedToSpring("Dummy");
+
+        //then
+        verify(toDoServiceMock).deleteTodo("Learn to Dance");
+        verify(toDoServiceMock, never()).deleteTodo("Learn Spring MVC");
+    }
+
+
 }
