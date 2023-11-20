@@ -8,6 +8,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.BDDMockito.given;
+import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.*;
 
 public class ToDoBusinessImplMockTest {
@@ -86,8 +87,9 @@ public class ToDoBusinessImplMockTest {
         toDoBusinessImpl.deleteToDosNotRelatedToSpring("Dummy");
 
         //then
-        verify(toDoServiceMock).deleteTodo("Learn to Dance");
-        verify(toDoServiceMock, never()).deleteTodo("Learn Spring MVC");
+        then(toDoServiceMock).should().deleteTodo("Learn to Dance");
+        then(toDoServiceMock).should(never()).deleteTodo("Learn Spring MVC");
+        then(toDoServiceMock).should(never()).deleteTodo("Learn Spring");
     }
 
 
