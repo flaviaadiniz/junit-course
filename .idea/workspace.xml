@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3e7fdbd-3e94-4efe-a46c-635849821ad3" name="Changes" comment="Change project structure to have junit and mockito modules in one project">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="e3e7fdbd-3e94-4efe-a46c-635849821ad3" name="Changes" comment="Add delete method on MockTest class">
+      <change afterPath="$PROJECT_DIR$/mockito-course/src/test/java/FirstMockitoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +17,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -25,6 +27,13 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2XETv7KBhLK0EkbHnmFMlUe3cCr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -43,7 +52,8 @@
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -54,58 +64,85 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="business" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AllTests (1)">
-    <configuration name="AllTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit-course" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AllTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AllTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit-mockito-course" />
+  <component name="RunManager" selected="JUnit.ToDoBusinessImplMockTest.testDeleteToDosNotRelatedToSpring_usingBDD">
+    <configuration name="ListTest.letsMockList_throwAnException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mockito-course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="business.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AllTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ComparingArrayTest.arraySort_Performance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit-mockito-course" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ComparingArrayTest" />
-      <option name="METHOD_NAME" value="arraySort_Performance" />
+      <option name="PACKAGE_NAME" value="business" />
+      <option name="MAIN_CLASS_NAME" value="business.ListTest" />
+      <option name="METHOD_NAME" value="letsMockList_throwAnException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringHelperParameterizedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit-mockito-course" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StringHelperParameterizedTest" />
+    <configuration name="ListTest.shouldReturnAnItemFromAList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mockito-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="business" />
+      <option name="MAIN_CLASS_NAME" value="business.ListTest" />
+      <option name="METHOD_NAME" value="shouldReturnAnItemFromAList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ToDoBusinessImplMockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mockito-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="business" />
+      <option name="MAIN_CLASS_NAME" value="business.ToDoBusinessImplMockTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringHelperParameterizedTest.truncateAInFirst2PositionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit-mockito-course" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StringHelperParameterizedTest" />
-      <option name="METHOD_NAME" value="truncateAInFirst2PositionsTest" />
+    <configuration name="ToDoBusinessImplMockTest.testDeleteToDosNotRelatedToSpring_usingBDD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mockito-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="business" />
+      <option name="MAIN_CLASS_NAME" value="business.ToDoBusinessImplMockTest" />
+      <option name="METHOD_NAME" value="testDeleteToDosNotRelatedToSpring_usingBDD" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ToDoBusinessImplMockTest.testRetrieveToDosRelatedToSpring_usingBDD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mockito-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="business" />
+      <option name="MAIN_CLASS_NAME" value="business.ToDoBusinessImplMockTest" />
+      <option name="METHOD_NAME" value="testRetrieveToDosRelatedToSpring_usingBDD" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -113,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AllTests (1)" />
-        <item itemvalue="JUnit.AllTests" />
-        <item itemvalue="JUnit.StringHelperParameterizedTest.truncateAInFirst2PositionsTest" />
-        <item itemvalue="JUnit.StringHelperParameterizedTest" />
-        <item itemvalue="JUnit.ComparingArrayTest.arraySort_Performance" />
+        <item itemvalue="JUnit.ToDoBusinessImplMockTest.testDeleteToDosNotRelatedToSpring_usingBDD" />
+        <item itemvalue="JUnit.ToDoBusinessImplMockTest.testRetrieveToDosRelatedToSpring_usingBDD" />
+        <item itemvalue="JUnit.ToDoBusinessImplMockTest" />
+        <item itemvalue="JUnit.ListTest.shouldReturnAnItemFromAList" />
+        <item itemvalue="JUnit.ListTest.letsMockList_throwAnException" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +170,19 @@
       <workItem from="1698362645301" duration="2772000" />
       <workItem from="1698419386919" duration="7673000" />
       <workItem from="1698610339827" duration="2315000" />
-      <workItem from="1698685599286" duration="1229000" />
+      <workItem from="1698685599286" duration="4565000" />
+      <workItem from="1698802506551" duration="1319000" />
+      <workItem from="1698881258408" duration="2922000" />
+      <workItem from="1699230490765" duration="874000" />
+      <workItem from="1699640746758" duration="1738000" />
+      <workItem from="1699895421538" duration="1203000" />
+      <workItem from="1700093802671" duration="2530000" />
+      <workItem from="1700176798757" duration="935000" />
+      <workItem from="1700190608615" duration="3529000" />
+      <workItem from="1700234414322" duration="562000" />
+      <workItem from="1700235225230" duration="431000" />
+      <workItem from="1700342052228" duration="590000" />
+      <workItem from="1700357248232" duration="1436000" />
     </task>
     <task id="LOCAL-00001" summary="Add JUnit dependency to pom">
       <created>1698194409854</created>
@@ -233,7 +282,105 @@
       <option name="project" value="LOCAL" />
       <updated>1698624473285</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Update pom files">
+      <created>1698695121127</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1698695121127</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add ToDo classes">
+      <created>1698696290100</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1698696290100</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add ToDo stub test classes">
+      <created>1698803995519</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1698803995519</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Rename test method name">
+      <created>1698804084085</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1698804084085</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Refactor test class name">
+      <created>1698964440029</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1698964440029</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Add Mockito dependency to pom file">
+      <created>1698964479294</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1698964479294</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Add test class using Mockito">
+      <created>1698965836373</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1698965836373</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Add test that should throw an exception">
+      <created>1700098837258</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1700098837258</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Add first tests using BDD">
+      <created>1700231431517</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1700231431517</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Add first tests using BDD">
+      <created>1700232129995</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1700232129995</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Change assertEquals to assertNull">
+      <created>1700232220892</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1700232220892</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Add a method to delete to dos">
+      <created>1700358089801</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1700358089801</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Correct logic on method that deletes to dos">
+      <created>1700358133859</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1700358133859</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Add delete method on MockTest class">
+      <created>1700358732253</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1700358732253</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,8 +398,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add JUnit dependency to pom" />
-    <MESSAGE value="Add StringHelper main class and StringHelperTest" />
     <MESSAGE value="Add 2 first tests to StringHelperTest" />
     <MESSAGE value="Minor code refactoring on StringHelper" />
     <MESSAGE value="Add first test using assertFalse to StringHelperTest" />
@@ -265,6 +410,19 @@
     <MESSAGE value="Add parameterized test class" />
     <MESSAGE value="Add Runner class to run only tests of specified classes" />
     <MESSAGE value="Change project structure to have junit and mockito modules in one project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change project structure to have junit and mockito modules in one project" />
+    <MESSAGE value="Update pom files" />
+    <MESSAGE value="Add ToDo classes" />
+    <MESSAGE value="Add ToDo stub test classes" />
+    <MESSAGE value="Rename test method name" />
+    <MESSAGE value="Refactor test class name" />
+    <MESSAGE value="Add Mockito dependency to pom file" />
+    <MESSAGE value="Add test class using Mockito" />
+    <MESSAGE value="Add test that should throw an exception" />
+    <MESSAGE value="Add first tests using BDD" />
+    <MESSAGE value="Change assertEquals to assertNull" />
+    <MESSAGE value="Add a method to delete to dos" />
+    <MESSAGE value="Correct logic on method that deletes to dos" />
+    <MESSAGE value="Add delete method on MockTest class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add delete method on MockTest class" />
   </component>
 </project>
