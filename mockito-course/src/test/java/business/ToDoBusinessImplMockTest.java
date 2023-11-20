@@ -2,11 +2,14 @@ package business;
 
 import data.ToDoService;
 import org.junit.Test;
+import org.mockito.ArgumentCaptor;
 
 import java.util.Arrays;
 import java.util.List;
 
+import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.*;
@@ -90,6 +93,31 @@ public class ToDoBusinessImplMockTest {
         then(toDoServiceMock).should().deleteTodo("Learn to Dance");
         then(toDoServiceMock).should(never()).deleteTodo("Learn Spring MVC");
         then(toDoServiceMock).should(never()).deleteTodo("Learn Spring");
+    }
+
+
+    @Test
+    public void testDeleteToDosNotRelatedToSpring_usingBDD_argumentCapture() {
+
+        //declare an argument captor
+        ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);
+
+        //given
+        ToDoService toDoServiceMock = mock(ToDoService.class);
+
+        List<String> toDos = Arrays.asList("Learn Spring MVC", "Learn Spring", "Learn to Dance");
+
+        given(toDoServiceMock.retrieveToDos("Dummy")).willReturn(toDos);
+
+        ToDoBusinessImpl toDoBusinessImpl = new ToDoBusinessImpl(toDoServiceMock);
+
+        //when
+        toDoBusinessImpl.deleteToDosNotRelatedToSpring("Dummy");
+
+        //then
+        then(toDoServiceMock).should().deleteTodo(stringArgumentCaptor.capture()); //capture the argument
+        assertEquals(stringArgumentCaptor.getValue(), "Learn to Dance");
+
     }
 
 
