@@ -4,6 +4,7 @@ import data.ToDoService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
+import org.mockito.Captor;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
@@ -25,6 +26,9 @@ public class ToDoBusinessImplMockitoInjectMocksTest {
     @InjectMocks
     ToDoBusinessImpl toDoBusinessImpl; //creates an instance of ToDoBusinessImpl and injects the instance of
                                        //ToDoService as a dependency
+
+    @Captor
+    ArgumentCaptor<String> stringArgumentCaptor; // creates a captor of the type String
 
 
     @Test
@@ -84,9 +88,6 @@ public class ToDoBusinessImplMockitoInjectMocksTest {
     @Test
     public void testDeleteToDosNotRelatedToSpring_usingBDD_argumentCapture() {
 
-        //declare an argument captor
-        ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);
-
         List<String> toDos = Arrays.asList("Learn Spring MVC", "Learn Spring", "Learn to Dance");
 
         given(toDoServiceMock.retrieveToDos("Dummy")).willReturn(toDos);
@@ -97,7 +98,6 @@ public class ToDoBusinessImplMockitoInjectMocksTest {
         //then
         then(toDoServiceMock).should().deleteTodo(stringArgumentCaptor.capture()); //capture the argument
         assertEquals(stringArgumentCaptor.getValue(), "Learn to Dance");
-
     }
 
 }
