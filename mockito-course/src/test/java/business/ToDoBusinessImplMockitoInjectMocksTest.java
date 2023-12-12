@@ -4,6 +4,7 @@ import data.ToDoService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
@@ -21,13 +22,16 @@ public class ToDoBusinessImplMockitoInjectMocksTest {
     @Mock
     ToDoService toDoServiceMock; //creates a mock of this kind for the class
 
+    @InjectMocks
+    ToDoBusinessImpl toDoBusinessImpl; //creates an instance of ToDoBusinessImpl and injects the instance of
+                                       //ToDoService as a dependency
+
+
     @Test
     public void testRetrieveToDosRelatedToSpring_usingAMock() {
         List<String> toDos = Arrays.asList("Learn Spring MVC", "Learn Spring", "Learn to Dance");
 
         when(toDoServiceMock.retrieveToDos("Dummy")).thenReturn(toDos);
-
-        ToDoBusinessImpl toDoBusinessImpl = new ToDoBusinessImpl(toDoServiceMock);
 
         List<String> filteredToDos = toDoBusinessImpl.retrieveToDosRelatedToSpring("Dummy");
 
@@ -41,8 +45,6 @@ public class ToDoBusinessImplMockitoInjectMocksTest {
 
         when(toDoServiceMock.retrieveToDos("Dummy")).thenReturn(toDos);
 
-        ToDoBusinessImpl toDoBusinessImpl = new ToDoBusinessImpl(toDoServiceMock);
-
         List<String> filteredToDos = toDoBusinessImpl.retrieveToDosRelatedToSpring("Dummy");
 
         assertEquals(0, filteredToDos.size());
@@ -54,8 +56,6 @@ public class ToDoBusinessImplMockitoInjectMocksTest {
         List<String> toDos = Arrays.asList("Learn Spring MVC", "Learn Spring", "Learn to Dance");
 
         given(toDoServiceMock.retrieveToDos("Dummy")).willReturn(toDos);
-
-        ToDoBusinessImpl toDoBusinessImpl = new ToDoBusinessImpl(toDoServiceMock);
 
         //when
         List<String> filteredToDos = toDoBusinessImpl.retrieveToDosRelatedToSpring("Dummy");
@@ -70,8 +70,6 @@ public class ToDoBusinessImplMockitoInjectMocksTest {
         List<String> toDos = Arrays.asList("Learn Spring MVC", "Learn Spring", "Learn to Dance");
 
         given(toDoServiceMock.retrieveToDos("Dummy")).willReturn(toDos);
-
-        ToDoBusinessImpl toDoBusinessImpl = new ToDoBusinessImpl(toDoServiceMock);
 
         //when
         toDoBusinessImpl.deleteToDosNotRelatedToSpring("Dummy");
@@ -93,8 +91,6 @@ public class ToDoBusinessImplMockitoInjectMocksTest {
 
         given(toDoServiceMock.retrieveToDos("Dummy")).willReturn(toDos);
 
-        ToDoBusinessImpl toDoBusinessImpl = new ToDoBusinessImpl(toDoServiceMock);
-
         //when
         toDoBusinessImpl.deleteToDosNotRelatedToSpring("Dummy");
 
@@ -103,6 +99,5 @@ public class ToDoBusinessImplMockitoInjectMocksTest {
         assertEquals(stringArgumentCaptor.getValue(), "Learn to Dance");
 
     }
-
 
 }
