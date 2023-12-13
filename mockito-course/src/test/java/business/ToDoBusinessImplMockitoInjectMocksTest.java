@@ -26,6 +26,7 @@ public class ToDoBusinessImplMockitoInjectMocksTest {
     @InjectMocks
     ToDoBusinessImpl toDoBusinessImpl; //creates an instance of ToDoBusinessImpl and injects the instance of
                                        //ToDoService as a dependency
+                                       //** All the @Mocks are injected into @InjectMocks **
 
     @Captor
     ArgumentCaptor<String> stringArgumentCaptor; // creates a captor of the type String
